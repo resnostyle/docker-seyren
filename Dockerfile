@@ -1,10 +1,9 @@
-FROM ubuntu:14.04
-MAINTAINER Usman Ismail "usman@techtraits.com"
+FROM java:openjdk-7-jre
+MAINTAINER Bryan Pearson <bwp.pearson@gmail.com>
 
-RUN apt-get update && apt-get clean
-RUN apt-get install -q -y openjdk-7-jre-headless && apt-get clean
+ENV SEYREN_VERSION  1.2.1
 
-ADD https://github.com/scobal/seyren/releases/download/1.2.1/seyren-1.2.1.jar /opt/seyren.jar
+ADD https://github.com/scobal/seyren/releases/download/$SEYREN_VERSION/seyren-$SEYREN_VERSION.jar /opt/seyren.jar
 ADD run-seyren.sh /usr/bin/run-seyren.sh
 RUN chmod +x /usr/bin/run-seyren.sh
 

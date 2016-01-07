@@ -14,7 +14,7 @@ export MONGO_URL=mongodb://$MONGODB_PORT_27017_TCP_ADDR:$MONGODB_PORT_27017_TCP_
 
 echo "Graphite URL $GRAPHITE_URL"
 echo "Mongo URL $MONGO_URL"
-
+echo "Catalina Opts $CATALINA_OPTS"
 env
 
-java -jar /opt/seyren.jar
+java -jar /opt/seyren.jar CATALINA_OPTS='$CATALINA_OPTS'
