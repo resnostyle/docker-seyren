@@ -21,4 +21,4 @@ echo "Mongo URL $MONGO_URL"
 echo "Catalina Opts $CATALINA_OPTS"
 env
 
-java -jar /opt/seyren.jar CATALINA_OPTS='$CATALINA_OPTS'
+java -jar /opt/seyren.jar CATALINA_OPTS="$CATALINA_OPTS"
