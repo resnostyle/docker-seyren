@@ -20,4 +20,4 @@ echo "Graphite URL $GRAPHITE_URL"
 echo "Mongo URL $MONGO_URL"
 echo "Catalina Opts $CATALINA_OPTS"
 
-java -jar /opt/seyren.jar CATALINA_OPTS="$CATALINA_OPTS"
+java -jar /opt/seyren.jar $CATALINA_OPTS
