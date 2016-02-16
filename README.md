@@ -23,23 +23,13 @@ Then point your browser at [http://localhost:8080/](http://localhost:8080/)
 
 or [http://192.168.59.103:8080/](http://192.168.59.103:8080/) if you are using boot2docker
 
-## Building
-
-To build the image, simply invoke
-
-    docker build github.com/usmanismail/docker-seyren
-
-A prebuilt container is also available in the docker index
-
-    docker pull usman/docker-seyren
-    
 ## Author
 
-  * Usman Ismail (<usman@techtraits.com>)
+  * Bryan Pearson (<bwp.pearson@gmail.com>)
 
 ## LICENSE
 
-Copyright 2014 Usman Ismail
+Copyright 2016 Bryan Pearson
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
